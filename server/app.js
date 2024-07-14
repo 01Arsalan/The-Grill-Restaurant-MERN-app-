@@ -27,7 +27,11 @@ mongoose.connect(dbUrl, {})
 const app = express();
 
 // Create Redis client
-const redisClient = createClient();
+const redisClient = createClient({
+  host: process.env.REDIS_HOST,
+  port: process.env.REDIS_PORT,
+  password: process.env.REDIS_PASSWORD
+});
 
 redisClient.on('error', (err) => {
   console.error('Redis error:', err);
