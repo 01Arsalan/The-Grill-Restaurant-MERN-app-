@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .confirmation{
+    height: 86vh;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 25%;
+}
+
+.confirmation .img{
+    width: 50vw;
+} */
+
+.confirmation p{
+   text-align: center;
+   margin-left: auto;
+}

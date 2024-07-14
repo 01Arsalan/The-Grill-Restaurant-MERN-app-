@@ -1,0 +1,137 @@
+:root {
+    --navbar-height: 86px;
+    --navbar-bg: white;
+    --navbar-shadow: 0 0 8px rgb(197, 195, 195);
+    --navbar-brand-color: rgb(199, 67, 23);
+    --navbar-side-link-bg: rgb(255, 255, 255);
+    --navbar-side-link-hover-color: rgb(24, 24, 24);
+    --navbar-transition: all .2s linear;
+}
+
+.navbar {
+    height: var(--navbar-height);
+    background: var(--navbar-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    position:sticky;
+    top: 0;
+    z-index: 5;
+    transition: var(--navbar-transition);
+    padding-right: 3%;
+    box-shadow: var(--navbar-shadow);
+}
+
+.scrolled-navbar {
+    position:fixed;
+    background: transparent;
+    box-shadow: 0 0 0 0;
+
+}
+
+.navbar-logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: 7%;
+}
+
+.navbar-logo {
+    width: 130px;
+    border-radius: 35px;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-family: "Gill Sans";
+    font-weight: 390;
+    text-transform: capitalize;
+    color: var(--navbar-brand-color);
+}
+
+.navbar-link {
+    list-style: none;
+    text-decoration: none;
+    color: var(--navbar-brand-color);
+    text-transform: capitalize;
+}
+
+.navbar-side-link {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: left;
+    background: var(--navbar-side-link-bg);
+    transition: var(--navbar-transition);
+    color: var(--navbar-brand-color);
+    border-bottom: 2px dashed rgba(60, 60, 60, 0.321);
+}
+
+.navbar-side-link:hover {
+    color: var(--navbar-side-link-hover-color);
+}
+
+.navbar-side-link.navbar-side-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.navbar-side-link.side-link-button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    margin-top: 1rem;
+    background: rgb(243, 243, 243);
+}
+
+.navbar-side-link.side-link-button .bi {
+    margin-right: 8px; 
+}
+
+
+
+.offcanvas-header {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px dashed rgba(55, 55, 55, 0.668);
+}
+.bi-person-circle{
+    font-size: 3rem;
+    color: rgb(97, 97, 97);
+}
+.offcanvas-header div{
+    margin-left: 1rem;
+}
+.offcanvas-header div .offcanvas-title{
+    font-size: 1.1rem;
+}
+.offcanvas-header div .email{
+    color: rgba(59, 59, 59, 0.704);
+    font-size: .9rem;
+}
+.offcanvas-body{
+    padding-top: 0;
+}
+.navbar-nav{
+    padding: 0 1rem;
+}
+
+
+
+
+
+
+@media (max-width:756px) {
+    .navbar-logo-brand{
+        margin-left: 0;
+    }
+}
+@media (max-width:368px) {
+    .navbar-brand{
+        font-size: 1.4rem;
+        margin: 0;
+        transform: translateX(-10%);
+    }
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.536);
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.search-modal {
+    margin-top: 10%;
+    background: white;
+    width: 30rem;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    height: fit-content;
+}
+
+.search-modal .header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(215, 215, 215);
+    font-size: 1.2rem;
+    border-radius: 9px 9px 0 0;
+}
+
+.search-modal .header .close-btn {
+    border: none;
+    background: transparent;
+}
+
+.search-modal .header .img {
+    width: 30px;
+    background: white;
+    border-radius: 50%;
+}
+
+.search-modal .search-bar {
+    margin-top: 2rem;
+    width: 90%;
+    height: 3rem;
+    font-size: 1.1rem;
+    color: rgb(30, 30, 30);
+    border-radius: 15px;
+    text-indent: .6rem;
+}
+
+.search-modal .search-bar:focus {
+    outline: none;
+}
+
+.search-modal .search-items {
+    height: 20rem;
+    margin-top: 2rem;
+    overflow-y: scroll;
+}
+
+.search-modal .search-items .tile {
+    background: rgb(226, 226, 226);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 28rem;
+    border-radius: 7px;
+    overflow: hidden;
+    padding: 0 1rem 0 .4rem;
+    margin-bottom: .5rem;
+}
+
+.search-modal .search-items .tile .img {
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1120px) {
+    .search-modal {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 520px) {
+    .search-modal {
+        margin-top: 25%;
+        width: 22rem;
+    }
+
+    .search-modal .search-items .tile {
+        width: 20rem;
+    }
+
+    .search-modal .search-items .tile .img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 378px) {
+    .search-modal .search-bar {
+        margin-top: 1rem;
+    }
+
+    .search-modal {
+        margin-top: 30%;
+        width: 98%;
+    }
+
+    .search-modal .search-items {
+        width: 92%;
+    }
+
+    .search-modal .search-items .tile {
+        width: 104%;
+    }
+
+    .search-modal .search-items .tile .img {
+        width: 50px;
+    }
+}

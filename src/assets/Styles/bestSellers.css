@@ -1,0 +1,134 @@
+.bestSellers {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0 0 0;
+  padding: 0 8rem 3rem 8rem;
+  background-color: gainsboro;
+}
+
+.bestSellers--title {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.bestSellers .lines {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.bestSellers .line,
+.lines .smallLine {
+  width: 3rem;
+  height: 2px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 1rem;
+  background: rgb(0, 0, 0);
+}
+
+.lines .smallLine {
+  width: 0.2rem;
+}
+
+.bestSellers--items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bestSellers--items .tile {
+  background: white;
+  max-width: 20rem;
+  border-radius: 9px;
+  margin: 2rem 1rem;
+}
+
+.bestSellers--items .tile .img {
+  width: 20rem;
+  height: 14rem;
+  border-radius: 9px 9px 0 0;
+}
+
+.bestSellers--items .tile .recommended {
+  color: rgb(63, 22, 8);
+  margin: 1rem 0 0 1rem;
+}
+
+.bestSellers--items .tile .name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.4rem 0 0 1rem;
+  text-align: left;
+}
+
+.bestSellers--items .tile .detail {
+  margin: 0.4rem 0.5rem 2rem 1rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1050px) {
+  .bestSellers--items .recommended {
+      font-size: 0.7rem;
+  }
+  .bestSellers--items .tile .name {
+      font-size: 0.9rem;
+  }
+  .bestSellers--items .tile .detail {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .bestSellers--items .tile .img {
+      height: 10rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .bestSellers--items .tile .img {
+      height: 8rem;
+  }
+  .bestSellers--items .recommended {
+      font-size: 0.5rem;
+  }
+  .bestSellers--items .tile .name {
+      font-size: 0.7rem;
+  }
+  .bestSellers--items .tile .detail {
+      font-size: 0.7rem;
+      margin-bottom: 0.4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .bestSellers {
+      padding: 0 4rem;
+  }
+  .bestSellers--items .tile .img {
+      height: 8rem;
+      width: 14rem;
+  }
+  .bestSellers--items .recommended span,
+  .bestSellers--items .tile .detail {
+      display: none;
+  }
+  .bestSellers--items .tile .name {
+      font-size: 0.5rem;
+      margin-bottom: 1rem;
+  }
+  .bestSellers--items .tile {
+      margin: 2rem 0.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .bestSellers {
+      padding: 0 2rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .bestSellers {
+      padding: 0 0.8rem;
+  }
+}

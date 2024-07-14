@@ -1,0 +1,50 @@
+.owned {
+    padding-top: .3rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.owned .powered {
+    font-weight: 600;
+}
+
+.powered .color {
+    color: #c14a1f;
+}
+
+.owned .rights {
+    color: #c14a1fbc;
+    font-size: .8rem;
+}
+
+
+
+@media (max-width:678px) {
+    .owned .powered {
+        font-size: .8rem;
+    }
+
+    .owned .rights {
+        font-size: .6rem;
+        padding-top: .2rem;
+    }
+}
+
+@media (max-width:378px) {
+    .owned {
+        gap: 1.2rem;
+    }
+
+    .owned .powered {
+        font-size: .6rem;
+        padding-top: .3rem;
+
+    }
+
+    .owned .rights {
+        font-size: .4.4rem;
+        padding-top: .3rem;
+    }
+}

@@ -1,0 +1,181 @@
+.cusRev {
+    margin: 4rem 0 8rem 0;
+    max-height: 28rem;
+    background: url("@/assets/Images/cusRevBack.jpeg") no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.cusRev--detail1,
+.cusRev--detail2 {
+    color: white;
+    margin-top: 1rem;
+}
+
+.cusRev--detail1 {
+    font-size: 1.5rem;
+}
+
+.cusRev--detail2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.cusRev .lines {
+    display: flex;
+    gap: 0.2rem;
+    margin-top: 1rem;
+}
+
+.cusRev .line,
+.cusRev .lines .smallLine {
+    height: 2px;
+    border: none;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+}
+
+.cusRev .line {
+    width: 3rem;
+}
+
+.cusRev .lines .smallLine {
+    width: 0.2rem;
+}
+
+.reviewsList {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.reviewsList .tile {
+    margin-top: 4rem;
+    max-width: 40rem;
+    height: 10rem;
+    background-color: #F0F0F0;
+    border-radius: 9px;
+    display: flex;
+    flex-flow: column;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.reviewsList .tile .review {
+    margin: 2rem 2rem 0rem 2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+.reviewsList .tile .name {
+    margin: 1.4rem 2rem 2rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 848px) {
+    .cusRev {
+        margin: 4rem 0 6rem 0;
+    }
+    .reviewsList .tile {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 748px) {
+    .cusRev--detail1 {
+        font-size: 1.6rem;
+    }
+
+    .cusRev--detail2 {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .reviewsList .tile {
+        margin: .5rem 1rem;
+    }
+
+    .reviewsList .tile .review {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 608px) {
+    .cusRev {
+        margin: 4rem 0 4rem 0;
+    }
+    .cusRev--detail1 {
+        font-size: 1.2rem;
+    }
+
+    .cusRev--detail2 {
+        font-size: 1.4rem;
+    }
+
+    .reviewsList .tile {
+        margin: .5rem 1rem;
+    }
+
+    .reviewsList .tile .review {
+        font-size: .9rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .cusRev {
+        margin: 4rem 0 2rem 0;
+    }
+    .cusRev--detail1 {
+        font-size: 1rem;
+    }
+
+    .cusRev--detail2 {
+        font-size: 1.2rem;
+    }
+
+    .reviewsList .tile .review {
+        font-size: .8rem;
+        margin: 1rem .7rem 0 .7 rem;
+
+    }
+}
+
+@media (max-width: 378px) {
+    .cusRev--detail1 {
+        font-size: .8rem;
+        margin-top: .8rem;
+    }
+
+    .cusRev--detail2 {
+        font-size: 1rem;
+    }
+
+    .reviewsList .tile {
+        margin: .2rem 1rem 0 1rem;
+    }
+
+    .reviewsList .tile .review {
+        font-size: .7rem;
+        margin: 1rem .5rem 0 .5rem;
+    }
+
+    .reviewsList .tile .name {
+        font-size: 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+}
+
+@media (max-width:314px) {
+    .reviewsList .tile .review {
+        font-size: .6rem;
+        margin: 1rem .3rem 0 .3rem;
+    }
+
+    .cusRev--detail2 {
+        font-size: .9rem;
+    }
+}

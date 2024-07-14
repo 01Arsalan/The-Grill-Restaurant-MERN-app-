@@ -1,0 +1,158 @@
+.franchise {
+    margin: 4rem 8rem 0rem 8rem;
+    position: relative;
+    padding: 0 0.8rem;
+}
+
+.franchise .img {
+    border-radius: 9px;
+    width: 100%;
+    min-height: 10rem;
+}
+
+.franchise .title,
+.franchise .num,
+.franchise .outlets,
+.franchise .logo {
+    position: absolute;
+    font-family: Helvetica;
+}
+
+.franchise .title {
+    top: 2rem;
+    left: 25%;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #F0F0F0;
+}
+
+.franchise .num {
+    top: 5.6rem;
+    left: 25%;
+    font-size: calc(4rem + 1vw);
+    font-weight: 600;
+    color: #F0F0F0;
+}
+
+.franchise .outlets {
+    top: 12rem;
+    left: 25%;
+    font-size: calc(1rem + 1vw);
+    font-weight: 500;
+    color: #F54F15;
+}
+
+.franchise .logo {
+    top: 2rem;
+    left: 2%;
+    width: 300px;
+}
+
+@media (max-width: 1448px) {
+    .franchise .title {
+        font-size: 2rem;
+    }
+
+    .franchise .num {
+        font-size: calc(3rem + 1vw);
+        transform: translateY(-20%);
+    }
+
+    .franchise .outlets {
+        font-size: calc(1.2rem + 1vw);
+        transform: translateY(-40%);
+    }
+
+    .franchise .logo {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1288px) {
+    .franchise .outlets {
+        top: 10rem;
+    }
+}
+
+@media (max-width: 1148px) {
+    .franchise .title {
+        font-size: 1.5rem;
+    }
+
+    .franchise .num {
+        font-size: calc(2rem + 1vw);
+        transform: translateY(-40%);
+    }
+
+    .franchise .outlets {
+        font-size: calc(1rem + 1vw);
+        top: 8.5rem;
+    }
+}
+
+@media (max-width: 942px) {
+    .franchise {
+        margin: 2rem 4rem 0rem 4rem;
+    }
+
+    .franchise .title {
+        font-size: 1.5rem;
+    }
+
+    .franchise .num {
+        top: 4rem;
+        font-size: calc(2.5rem + 1vw);
+        transform: translateY(0%);
+    }
+
+    .franchise .outlets {
+        top: 9rem;
+        font-size: calc(1rem + 1vw);
+    }
+
+    .franchise .logo {
+        top: 1rem;
+        width: 150px;
+    }
+}
+
+@media (max-width: 700px) {
+    .franchise {
+        margin: 2rem 2rem 0rem 2rem;
+    }
+
+    .franchise .num {
+        font-size: calc(2rem + 1vw);
+    }
+
+    .franchise .outlets {
+        top: 8rem;
+        font-size: calc(0.8rem + 1vw);
+    }
+
+    .franchise .logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .franchise {
+        margin: 2rem 1rem 0rem 1rem;
+    }
+
+    .franchise .title {
+        font-size: 1rem;
+    }
+
+    .franchise .num {
+        font-size: calc(1.5rem + 1vw);
+    }
+
+    .franchise .outlets {
+        font-size: calc(0.6rem + 1vw);
+    }
+
+    .franchise .logo {
+        width: 80px;
+    }
+}

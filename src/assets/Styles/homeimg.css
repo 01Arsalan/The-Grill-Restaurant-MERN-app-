@@ -1,0 +1,8 @@
+.homeimg{
+    width:100%;
+    height: 24rem;
+    display: flex;
+  }
+  .homeimg .homeimg-img{
+    width:100%
+  }

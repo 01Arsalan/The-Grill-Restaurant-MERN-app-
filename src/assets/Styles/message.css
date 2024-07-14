@@ -1,0 +1,26 @@
+:root {
+    --margin-large: 4rem 8rem;
+    --margin-medium: 1rem 2rem;
+    --margin-small: 1rem 1rem;
+}
+
+.message {
+    margin: var(--margin-large);
+    border-radius: 9px;
+    overflow: hidden;
+}
+.message-img{
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .message {
+        margin: var(--margin-medium);
+    }
+}
+
+@media (max-width:540px) {
+    .message {
+        margin: var(--margin-small);
+    }
+}

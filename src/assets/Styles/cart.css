@@ -1,0 +1,180 @@
+
+
+/* ...cart... */
+.cart{
+    height: calc(100vh - 104px);
+    flex: 1 1 1rem;
+    margin: 0 1rem 1rem 1rem;
+}
+.cart .type{
+    margin-top: 1.5rem;
+}
+.type .title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.type .btns{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.type .btns .btn{
+    background-color: rgb(238, 239, 239);
+    font-size: 1rem;
+    width:5rem;
+    height: 4rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+}
+.type .btns .orange-btn{
+    background: rgb(228, 88, 42);
+}
+
+/* ..... */
+
+.picked-items{
+    margin-top: 2rem;
+    max-height: 18rem;
+    overflow: scroll;
+}
+.picked-items .tile{
+    display: flex;
+    flex-flow: column;
+    max-height: 7rem;
+    padding: .5rem 0;
+    margin-top: .8rem;
+    justify-content: space-between;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.picked-items .tile .detail{
+    width: 65%;;
+}
+.picked-items .tile .quan-price{
+    margin-bottom: 0;
+}
+.picked-items .tile .add-sub{
+    position: absolute;
+    right: 1.4rem;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border: 1px solid rgb(199, 67, 23);
+    height: 2.3rem;
+    border-radius: 7px;
+    background: rgb(246, 246, 245);
+}
+.tile .add-sub .btn{
+    width: 2rem;
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: rgb(199, 67, 23);
+}
+.tile .add-sub .num{
+    width: .8rem;
+    background: transparent;
+    margin-top: 18px;
+    text-align: justify;
+}
+
+
+/* ..... */
+
+.proceed{
+    margin-top: 1rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.proceed .subtotal,
+.proceed .checkout{
+    width: 20rem;
+    padding: .8rem 1rem;
+    border: 1px dashed black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.proceed .checkout{
+    margin-top: .8rem;
+    border: none;
+    background: rgb(231, 84, 35);
+    color: #ffffff;
+}
+
+@media (max-width:1400px) {
+    .picked-items .tile{
+        height: 7rem;
+        padding: .5rem 0;
+    }
+    .picked-items .tile .detail{
+        width: 60%;;
+    }
+    .picked-items .tile .quan-price{
+
+    }
+    .picked-items .tile .add-sub{
+        height: 2rem;
+    }
+    .tile .add-sub .btn{
+        width: 1.8rem;
+        font-size: 1.2rem;
+    }
+    .tile .add-sub .num{
+        width: .7rem;
+    }
+
+    .cart{
+        width: 9rem;
+    }
+    .type .btns .btn{
+        font-size: .9rem;
+        width:4.2rem;
+        padding: 2px;
+    }
+    .proceed .subtotal,
+    .proceed .checkout{
+        width: 16rem;
+    }
+}
+@media (max-width:1350px) {
+    .type .btns .btn {
+        font-size: .8rem;
+        padding: 5px 2px;
+        margin: 0 2px;
+    }
+}
+@media (max-width:950px) {
+    .cart{
+        display: none;
+    }
+}
+
+
+/* 
+@keyframes colorBurst {
+    0% {
+        background-color: rgba(255, 108, 55, 0.8); /* Initial burst color */
+        /* transform: scale(1.1);
+    }
+    100% {
+        background-color: rgba(255, 108, 55, 0); /* Fading out */
+        /* transform: scale(1);
+    }
+}
+
+
+.cart-item.burst {
+    animation: colorBurst 0.6s ease-out;
+}
+
+still to addd */ 

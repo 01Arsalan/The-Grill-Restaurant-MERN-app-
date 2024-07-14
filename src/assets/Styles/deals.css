@@ -1,0 +1,236 @@
+:root {
+  --font-family-primary: "Gill Sans";
+  --font-family-secondary: Helvetica;
+  --color-primary: rgb(38, 13, 5);
+  --color-secondary: rgb(63, 22, 8);
+  --color-highlight: rgb(53, 18, 6);
+  --color-background: antiquewhite;
+  --border-radius-small: 3px;
+  --border-radius-large: 15px;
+  --border-radius-circle: 75px;
+  --margin-medium: 1rem 2rem;
+  --transition-duration: 0.3s;
+}
+
+.deals {
+  height: 22rem;
+  margin: 4rem 8rem;
+  transition: all var(--transition-duration);
+}
+
+.deals-title {
+  font-size: 1.5rem;
+  font-family: var(--font-family-primary);
+  text-transform: capitalize;
+  font-weight: 630;
+  color: var(--color-primary);
+}
+
+.lines {
+  display: flex;
+  gap: 0.2rem;
+  margin: 0;
+}
+
+.line,
+.smallLine {
+  height: 2px;
+  background: var(--color-highlight);
+  border: none;
+  border-radius: var(--border-radius-small);
+  margin-top: 1rem;
+}
+
+.line {
+  width: 3rem;
+}
+
+.smallLine {
+  width: 0.2rem;
+}
+
+.deal {
+  width: fit-content;
+  height: 15rem;
+  border: none;
+  border-radius: var(--border-radius-large);
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: row;
+  background-color: var(--color-background);
+}
+
+.deal-detail .flat,
+.deal-detail .price,
+.offAbove .off,
+.offAbove .above,
+.deal-detail .code {
+  font-family: var(--font-family-primary);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.deal-detail .flat,
+.deal-detail .code,
+.offAbove .above {
+  font-size: 1.1rem;
+}
+
+.deal-detail .flat {
+  margin: 0.6rem 0 0 1rem;
+}
+
+.deal-detail .price {
+  font-size: 4rem;
+  margin: 0 0 0 1rem;
+  transform: translateY(-22%);
+}
+
+.offAbove {
+  display: flex;
+  flex-flow: row;
+  gap: 0.7rem;
+  transform: translateY(-50%);
+}
+
+.offAbove .off {
+  font-family: var(--font-family-secondary);
+  font-size: 4.4rem;
+  margin-left: 1rem;
+  letter-spacing: -3px;
+}
+
+.offAbove .above {
+  font-family: var(--font-family-secondary);
+  transform: translateY(20%);
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.deal-detail .code {
+  font-family: var(--font-family-secondary);
+  text-transform: capitalize;
+  border: 1px dashed var(--color-secondary);
+  border-radius: 7px;
+  padding: 10px 15px;
+  margin-left: 1rem;
+  transform: translateY(-150%);
+}
+
+.deal-detail .dim {
+  color: rgba(71, 70, 70, 0.884);
+}
+
+.deal-img .img {
+  width: 150px;
+  height: 150px;
+  border-radius: var(--border-radius-circle);
+  display: flex;
+  margin: 4rem 0.7rem 0 1rem;
+}
+
+.tiles {
+  display: flex;
+  flex-flow: row;
+  gap: 1.3rem;
+  overflow: scroll;
+}
+
+.tiles::-webkit-scrollbar {
+  width: 0;
+}
+
+.deals-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.deals-btns .bttn {
+  width: 12px;
+  height: 12px;
+  border-radius: 9px;
+  border: none;
+  background: rgb(119, 117, 117);
+}
+
+.deals-btns .activeBtn {
+  background: rgb(229, 81, 31);
+}
+
+@media (max-width: 768px) {
+  .deals {
+    margin: var(--margin-medium);
+  }
+
+  .deal {
+    width: 90%;
+  }
+  .deal-img .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 4rem 0.7rem 0 2rem;
+  }
+  .offAbove .above {
+    transform: translateY(32%);
+  }
+  .deal-detail .code {
+    padding: 5px 7px;
+    margin-left: 1rem;
+    transform: translateY(-80%);
+  }
+  .deal-detail .price,
+  .offAbove .off {
+    font-size: 3rem;
+    margin-top: 0.8rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .deal-img .img {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    margin: 4rem 0.7rem 0 1.5rem;
+  }
+  .offAbove .above {
+    font-size: .9rem;
+    transform: translateY(35%);
+  }
+}
+
+@media (max-width: 416px) {
+  .deal-detail .code {
+    font-size: 0.9rem;
+  }
+  .deal-img .img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 1rem 1rem 0 1.5rem;
+  }
+  .offAbove .above {
+    transform: translateY(32%);
+  }
+  .deal-detail .code {
+    padding: 5px 7px;
+    margin-left: 1rem;
+    transform: translateY(-80%);
+  }
+  .deal-detail .price,
+  .offAbove .off {
+    font-size: 3rem;
+    margin-top: 0.8rem;
+  }
+}
+@media (max-width: 320px) {
+  .deal-detail .code {
+    font-size: 0.7rem;
+  }
+  .deal-img .img {
+    transform: translatex(-15%);
+
+  }
+}

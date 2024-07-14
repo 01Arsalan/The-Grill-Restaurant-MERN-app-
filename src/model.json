@@ -1,0 +1,44 @@
+homePageData={
+    nav:{
+        logo:Image,
+        userData:{sub-model}
+    },
+    home:{img:Image},
+    deals:[
+        {price:Number,
+         above:Number,
+         code:String,
+         img:Image
+        },
+        // total 4 objects
+    ],
+    about:{img:Image},
+    message:{img:Image},
+    journey:{img:Image},
+    location:[
+        {place:String,img:Image},
+        // total 4 objects
+    ],
+    quality:{img1:Image,img2:Image,img3:Image,img:4Image,},
+    explore:[
+        {name:String,img:Image},
+        // total 5 objects
+    ],
+    bestSellers:[
+        {name:String,
+         detail:String,
+         img:Image
+        },
+        // total 3 objects
+    ],
+    franchise:{img1:Image,img2:Image},
+    reviews:[
+        {name:String,
+         review:String
+        },
+        // total 10 objects
+    ],
+    footer:{paymentImg:Image,
+        followImg:{img1:Image,img2:Image,img3:Image,img:4Image}
+    },
+}

@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.checkout-section {
+    background: rgb(238, 238, 238);
+    padding: 2rem 8rem;
+    display: flex;
+    gap: 3rem;
+    overflow: scroll;
+}
+
+.section-1 {
+    background-color: rgb(255, 255, 255);
+    padding: 0 10px;
+    border-radius: 8px;
+    flex: 2 1;
+}
+
+.section-1 .location {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.section-1 .location p {
+    transform: translateX(-3%);
+}
+
+.section-1 .order-type {
+    display: flex;
+    gap: 10px;
+
+}
+
+.section-1 .order-type .btn {
+    width: 24%;
+    padding: .4rem 0;
+    background: rgb(217, 217, 217);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.section-1 .order-type .orange-btn {
+    background: #F54F15;
+}
+
+.section-1 .additional-detail {
+    padding: 0 10px;
+    margin-top: 8px;
+    height: 6rem;
+    background: rgb(222, 222, 222);
+}
+
+.section-1 .additional-detail .to {
+    padding-top: .6rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.838);
+}
+
+.section-1 .additional-detail .address {
+    font-size: 1rem;
+}
+
+.section-1 .additional-detail .carno {
+    padding: .3rem 0 .3rem 1rem;
+    font-size: 1rem;
+}
+
+.section-1 .additional-detail .carno:focus {
+    outline: none;
+}
+
+
+.section-1 .added_items {
+    background: rgb(238, 238, 238);
+    height: 17rem;
+}
+
+.section-1 .added_items .title {
+    padding: 5px 10px;
+    margin: 1rem 0 0 0;
+    font-size: 1.1rem;
+}
+
+.section-1 .added_items .items {
+    height: 15rem;
+    overflow: scroll;
+}
+
+.section-1 .tile {
+    padding: 0 1rem;
+    background: white;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    border-bottom: 1px black solid;
+}
+
+.section-1 .tile .name,
+.section-1 .tile .quan-price {
+    margin: 1rem 0;
+}
+
+.section-1 .tile .quan-price {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.section-1 .tile .quan-price .quantity {
+    border: 1px solid rgb(237, 108, 21);
+    padding: .3rem 1rem;
+}
+
+.section-1 .tile .quan-price .price {
+    color: tomato;
+    padding-top: 4px;
+}
+
+.section-1 .tile .img {
+    position: absolute;
+    top: 5px;
+    width: 10px;
+}
+
+.section-1 .instructions {
+    display: flex;
+    padding: 2rem 0 3.1rem 0;
+    padding-bottom: 0.5rem;
+    background: rgb(238, 238, 238);
+}
+
+.section-1 .instructions .img {
+    height: 40px;
+    background-color: white;
+    border-radius: 3px 0 0 6px;
+}
+
+.section-1 .instructions .input {
+    width: 100%;
+    padding: .5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0 3px 3px 0;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.755);
+
+}
+
+.section-1 .instructions .input:focus {
+    outline: none;
+}
+
+
+/* SECTION 2 */
+
+.section-2 {
+    flex: 1 2;
+
+}
+
+.section-2 .title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.section-2 .offers .tile {
+    display: flex;
+    flex-flow: row;
+    background: linear-gradient(to bottom, #e1e1e1, #FFFFFF);
+    padding: 1rem;
+    border-radius: 7px;
+    margin-bottom: .5rem;
+    width: 96%;
+}
+
+.section-2 .offers .tile .img {
+    height: 40px;
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.section-2 .offers .tile .offer {
+    display: flex;
+    flex-flow: column;
+    margin-left: .5rem;
+    gap: .3rem;
+}
+
+.section-2 .offers .tile .offer .code {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #F54F15;
+}
+
+.section-2 .offers .tile .offer .detail {
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 0;
+
+}
+
+
+.section-2 .bill-details {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.section-2 .bill-details .details {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem 0;
+}
+
+.section-2 .bill-details .details .detail {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.section-2 .bill-details .details .detail .type {
+    font-size: .9rem;
+    font-weight: 550;
+    margin-bottom: 0;
+}
+
+.section-2 .bill-details .details .detail .delivery {
+    color: #F54F15;
+}
+
+.section-2 .bill-details .details .detail .grand {
+    font-weight: 700;
+}
+
+.section-2 .bill-details .details .payment {
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: .8rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background: #F54F15;
+    transform: translateX(6%);
+}
+
+
+/* Tablet and up */
+@media (max-width: 1108px) {
+    .section-2 .offers .tile {
+        padding: .5rem;
+    }
+
+    .section-2 .offers .tile .offer .detail {
+        font-size: .6rem;
+    }
+
+    .section-2 .offers .tile .offer .code {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 1056px) {
+    .section-1 .tile .quan-price {
+        width: 25%;
+    }
+}
+
+@media (max-width: 978px) {
+    .checkout-section {
+        flex-flow: column;
+    }
+
+    .section-1 .tile .name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 874px) {
+    .checkout-section {
+        padding: 2rem 4rem;
+    }
+
+    .section-1 .location p {
+        text-align: center;
+    }
+
+    .section-1 .additional-detail {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 544px) {
+
+    .section-1 .tile .quan-price .quantity,
+    .section-1 .tile .quan-price .quantity {
+        font-size: .8rem;
+        padding: .2rem .6rem
+    }
+
+    .section-1 .additional-detail .to,
+    .section-1 .additional-detail .address {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 468px) {
+    .checkout-section {
+        padding: 2rem 1rem;
+    }
+
+    .section-1 .tile .quan-price .quantity,
+    .section-1 .tile .quan-price .quantity {
+        font-size: .8rem;
+        padding: .2rem .6rem;
+        margin-right: 10px;
+    }
+
+    .section-1 .additional-detail .to,
+    .section-1 .additional-detail .address {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 358px) {
+    .checkout-section {
+        padding: 2rem 0rem;
+    }
+
+    .section-1 .tile .quan-price .quantity,
+    .section-1 .tile .quan-price .quantity {
+        font-size: .8rem;
+        padding: .2rem .6rem;
+        margin-right: 10px;
+    }
+}
