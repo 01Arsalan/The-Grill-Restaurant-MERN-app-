@@ -28,10 +28,13 @@ const app = express();
 
 // Create Redis client
 const redisClient = createClient({
-  host: process.env.REDIS_HOST,
-  port: process.env.REDIS_PORT,
-  password: process.env.REDIS_PASSWORD
+    password: process.env.REDIS_PASSWORD,
+    socket: {
+        host: 'redis-13090.c301.ap-south-1-1.ec2.redns.redis-cloud.com',
+        port: 13090
+    }
 });
+
 
 redisClient.on('error', (err) => {
   console.error('Redis error:', err);
