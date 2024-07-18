@@ -69,6 +69,7 @@ app.use('/api/order', order);
 
 // Handle unmatched routes
 app.use((req, res) => {
+  console.log("Request Object : ",req) 
   console.log('No Route Matched!');
   res.status(404).send('No Route Matched!');
 });
