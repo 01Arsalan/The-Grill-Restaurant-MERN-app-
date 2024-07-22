@@ -9,7 +9,12 @@ import order from './Routes/order.js';
 import session from 'express-session';
 import RedisStore from 'connect-redis';
 import { createClient } from 'redis';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
+// Handle __dirname in ES6
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 
 const dbUrl=process.env.MONGODB_AIP_URI
@@ -69,7 +74,11 @@ app.use('/api/order', order);
 
 // Serve the React app for any other route
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve('build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'), (err) => {
+      if (err) {
+          res.status(500).send(err);
+      }
+  });
 });
 
 // Handle unmatched routes
