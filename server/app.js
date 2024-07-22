@@ -67,6 +67,11 @@ app.use('/api/', load);
 app.use('/api/user', user);
 app.use('/api/order', order);
 
+// Serve the React app for any other route
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve('build', 'index.html'));
+});
+
 // Handle unmatched routes
 app.use((req, res) => {
   console.log("Request Object : ",req) 
