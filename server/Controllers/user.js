@@ -62,6 +62,7 @@ export const isUser = async (req, res) => {
         if (user) {
             const formattedDateOfBirth = user.dateOfBirth.toISOString().split('T')[0];
             req.session.user = { user: { ...user.toObject(), dateOfBirth: formattedDateOfBirth } }
+            console.log(req.session)
 
             return res.status(200).json({ exists: true, user: { ...user.toObject(), dateOfBirth: formattedDateOfBirth } });
         } else {
