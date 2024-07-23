@@ -40,7 +40,7 @@ export const saveOrUpdateUser = async (req, res) => {
 
 export const isUser = async (req, res) => {
 
-    console.log("isuser hit")
+    console.log("isuser hit",req.session)
     //send session data, it exists.
     if (req.session.user) {
         console.log("user sent")
