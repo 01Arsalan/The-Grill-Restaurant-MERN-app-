@@ -39,11 +39,8 @@ export const saveOrUpdateUser = async (req, res) => {
 
 
 export const isUser = async (req, res) => {
-
-    console.log("isuser hit",req.session)
     //send session data, it exists.
     if (req.session.user) {
-        console.log("user sent")
         return res.status(200).json({ exists: true, user: req.session.user });
     }
 
@@ -51,7 +48,6 @@ export const isUser = async (req, res) => {
 
     // response if there is no session.
     if (!phone) {
-        console.log("isuser hit no phone found")
         return res.status(200).json({ exists: false, message: 'Phone number is required' });
     }
 
@@ -62,7 +58,6 @@ export const isUser = async (req, res) => {
         if (user) {
             const formattedDateOfBirth = user.dateOfBirth.toISOString().split('T')[0];
             req.session.user = { user: { ...user.toObject(), dateOfBirth: formattedDateOfBirth } }
-            console.log(req.session)
 
             return res.status(200).json({ exists: true, user: { ...user.toObject(), dateOfBirth: formattedDateOfBirth } });
         } else {
