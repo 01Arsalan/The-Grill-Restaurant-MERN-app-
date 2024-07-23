@@ -42,6 +42,7 @@ export const isUser = async (req, res) => {
 
     //send session data, it exists.
     if (req.session.user) {
+        console.log("user sent")
         return res.status(200).json({ exists: true, user: req.session.user });
     }
 
