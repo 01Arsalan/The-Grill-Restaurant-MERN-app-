@@ -35,8 +35,8 @@ const app = express();
 const redisClient = createClient({
     password: process.env.REDIS_PASSWORD,
     socket: {
-        host: 'redis-17888.c323.us-east-1-2.ec2.redns.redis-cloud.com',
-        port: 17888
+        host: 'redis-19393.c301.ap-south-1-1.ec2.redns.redis-cloud.com',
+        port: 19393
     }
 });
 
